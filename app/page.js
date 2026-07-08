@@ -19,7 +19,7 @@ const features = [
 ];
 
 const galleryImages = [
-  { src: "/images/products/pink-mix.jpg", label: "Spring Mix" },
+  { src: "/images/products/pink-mix.png", label: "Spring Mix" },
   { src: "/images/products/blue-lily.jpg", label: "Blue Sky Lily" },
   { src: "/images/products/sunflower-white.jpg", label: "Sunshine Sunflower" },
   { src: "/images/products/red-basket.jpg", label: "Just For You" },
@@ -137,7 +137,7 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
           <div className="col-span-2 row-span-2 rounded-3xl overflow-hidden petal-shadow relative group">
-            <img src="/images/products/pink-mix.jpg" alt="Spring Mix" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="/images/products/pink-mix.png" alt="Spring Mix" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-plum/50 to-transparent flex items-end p-5">
               <p className="font-display text-white text-lg">Spring Mix Signature</p>
             </div>
