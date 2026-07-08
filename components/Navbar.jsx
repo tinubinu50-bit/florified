@@ -23,7 +23,7 @@ export default function Navbar() {
        {/* Logo */}
 <Link href="/" className="flex items-center gap-3">
   <img
-    src="/images/logo.jpeg"
+    src="/images/logo.png"
     alt="Florified Logo"
     className="w-12 h-12 rounded-full object-cover"
   />
