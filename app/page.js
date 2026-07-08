@@ -54,7 +54,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center">
           <img
-            src="/images/logo.jpeg"
+            src="/images/logo.png"
             alt="Florified"
             className="w-24 h-24 rounded-full object-cover mb-6 shadow-lg"
             style={{ border: "3px solid #E8A0BF" }}
