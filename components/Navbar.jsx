@@ -20,14 +20,17 @@ export default function Navbar() {
     <nav className="bg-blush/80 backdrop-blur-md sticky top-0 z-50 rose-border border-b">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
-        {/* Logo */}
+       {/* Logo */}
 <Link href="/" className="flex items-center gap-3">
-  {/* Circular logo placeholder */}
-  <div className="w-11 h-11 rounded-full bg-mauve flex items-center justify-center text-white text-lg font-bold shrink-0 overflow-hidden">
-    <span className="font-script text-sm">F</span>
-  </div>
+  <img
+    src="/images/logo.jpeg"
+    alt="Florified Logo"
+    className="w-12 h-12 rounded-full object-cover"
+  />
   <div className="flex flex-col leading-none">
-    <span style={{ fontFamily: '"Cormorant Garamond", serif' }} className="text-4xl text-mauve tracking-wide font-bold italic">Florified</span>
+    <span style={{ fontFamily: '"Cormorant Garamond", serif' }} className="text-3xl text-mauve font-bold italic">
+      Florified
+    </span>
     <span className="text-[10px] text-rose font-body tracking-[0.25em] uppercase mt-0.5">
       by her
     </span>

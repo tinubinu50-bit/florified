@@ -4,16 +4,21 @@ const INSTAGRAM_USERNAME = "florified_by_her";
 
 export default function ProductCard({ product }) {
   const { name, description, image, tags, price } = product;
-
   const igLink = `https://ig.me/m/${INSTAGRAM_USERNAME}`;
 
   return (
-    <div className="group relative bg-white rounded-3xl overflow-hidden petal-shadow flex flex-col transition-transform duration-300 hover:-translate-y-1" style={{ border: "1.5px solid #E8A0BF" }}>
-
+    <div
+      className="group relative bg-white rounded-3xl overflow-hidden petal-shadow flex flex-col transition-transform duration-300 hover:-translate-y-1"
+      style={{ border: "1.5px solid #E8A0BF" }}
+    >
       {/* Image area */}
       <div className="relative w-full aspect-square bg-petal flex items-center justify-center overflow-hidden">
         {image ? (
-          <img src={image} alt={name} className="w-full h-full object-cover" />
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover"
+          />
         ) : (
           <span className="text-7xl">🌸</span>
         )}
@@ -37,16 +42,21 @@ export default function ProductCard({ product }) {
         <span className="self-start bg-mauve/10 text-mauve text-xs font-body font-semibold px-3 py-1 rounded-full">
           {price}
         </span>
-        <p className="font-body text-plum/60 text-xs leading-relaxed flex-1">{description}</p>
+        <p className="font-body text-plum/60 text-xs leading-relaxed flex-1">
+          {description}
+        </p>
         <div className="flex flex-wrap gap-2 mt-1">
           {tags.map((tag) => (
-            <span key={tag} className="text-[10px] font-body text-mauve bg-petal px-3 py-1 rounded-full">
+            <span
+              key={tag}
+              className="text-[10px] font-body text-mauve bg-petal px-3 py-1 rounded-full"
+            >
               {tag}
             </span>
           ))}
         </div>
       </div>
-
+      
     </div>
   );
 }
