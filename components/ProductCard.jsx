@@ -4,7 +4,10 @@ const INSTAGRAM_USERNAME = "florified_by_her";
 
 export default function ProductCard({ product }) {
   const { name, description, image, tags, price } = product;
-  const igLink = `https://ig.me/m/${INSTAGRAM_USERNAME}`;
+
+  function handleOrder() {
+    window.open("https://ig.me/m/" + INSTAGRAM_USERNAME, "_blank");
+  }
 
   return (
     <div
@@ -14,25 +17,19 @@ export default function ProductCard({ product }) {
       {/* Image area */}
       <div className="relative w-full aspect-square bg-petal flex items-center justify-center overflow-hidden">
         {image ? (
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover"
-          />
+          <img src={image} alt={name} className="w-full h-full object-cover" />
         ) : (
           <span className="text-7xl">🌸</span>
         )}
 
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-mauve/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          
-            href={igLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-mauve font-body font-semibold text-sm px-7 py-3 rounded-full hover:bg-petal transition-colors duration-200 shadow-lg"
-          <a>
+          <button
+            onClick={handleOrder}
+            className="bg-white text-mauve font-body font-semibold text-sm px-7 py-3 rounded-full hover:bg-petal transition-colors duration-200 shadow-lg cursor-pointer"
+          >
             Order This 💬
-          </a>
+          </button>
         </div>
       </div>
 
@@ -56,7 +53,6 @@ export default function ProductCard({ product }) {
           ))}
         </div>
       </div>
-      
     </div>
   );
 }
