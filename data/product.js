@@ -75,8 +75,8 @@ export const products = [
     id: 10,
     name: "Spring Mix Signature",
     description: "Our signature mix  pink lilies, tulips, white daisies and yellow accents in a blush and white wrap. The Florified classic.",
-    image: "/images/products/pink-mix.jpg",
-    price: "Starting from AED 130",
+    image: "/images/products/pink-mix.png",
+        price: "Starting from AED 130",
     tags: ["Signature", "Mix", "Spring"],
   },
 ];

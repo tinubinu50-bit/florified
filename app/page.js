@@ -93,7 +93,7 @@ export default function Home() {
   </h2>
   <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
     {[
-      { src: "/images/products/pink-mix.jpg", label: "Spring Mix" },
+      { src: "/images/products/pink-mix.png", label: "Spring Mix" },
       { src: "/images/products/blue-lily.jpg", label: "Blue Sky Lily" },
       { src: "/images/products/sunflower-white.jpg", label: "Sunshine Sunflower" },
       { src: "/images/products/red-basket.jpg", label: "Just For You" },
