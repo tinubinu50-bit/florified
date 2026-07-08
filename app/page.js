@@ -85,6 +85,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* Photo Gallery Strip */}
+<section className="py-16 px-6 overflow-hidden">
+  <p className="font-script text-mauve text-2xl text-center mb-2">our work</p>
+  <h2 className="font-display text-3xl text-plum text-center mb-10">
+    Made with pipe cleaners, crafted with love
+  </h2>
+  <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
+    {[
+      { src: "/images/products/pink-mix.jpg", label: "Spring Mix" },
+      { src: "/images/products/blue-lily.jpg", label: "Blue Sky Lily" },
+      { src: "/images/products/sunflower-white.jpg", label: "Sunshine Sunflower" },
+      { src: "/images/products/red-basket.jpg", label: "Just For You" },
+      { src: "/images/products/pink-carnation.jpg", label: "Pink Carnation Cloud" },
+      { src: "/images/products/dark-tulip.jpg", label: "Dark Romance" },
+    ].map(({ src, label }) => (
+      <div key={src} className="snap-start shrink-0 w-60 md:w-72 rounded-3xl overflow-hidden petal-shadow relative group" style={{ border: "1.5px solid #E8A0BF" }}>
+        <img src={src} alt={label} className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-plum/60 to-transparent p-4">
+          <p className="font-display text-white text-sm">{label}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* CTA Banner */}
       <section className="py-20 px-6 text-center">

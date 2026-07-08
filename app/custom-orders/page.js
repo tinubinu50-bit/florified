@@ -21,7 +21,7 @@ export default function CustomOrders() {
         <p className="font-body text-plum/70 text-sm leading-relaxed">
           We're working on a fun drag-and-drop bouquet builder where you can
           pick your flowers, colors, and wrapping style. Until then, just reach
-          out to us directly — we love bringing your ideas to life!
+          out to us directly  we love bringing your ideas to life!
         </p>
         <div className="bg-petal rose-border rounded-3xl p-8 petal-shadow w-full text-left flex flex-col gap-3">
           <p className="font-display text-lg text-plum">How to place a custom order right now:</p>
