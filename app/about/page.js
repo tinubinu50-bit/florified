@@ -51,7 +51,7 @@ export default function About() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3">
-          <img src="/images/products/pink-mix.jpg" className="rounded-3xl w-full h-48 object-cover petal-shadow" />
+          <img src="/images/products/pink-mix.png" className="rounded-3xl w-full h-48 object-cover petal-shadow" />
           <img src="/images/products/blue-lily.jpg" className="rounded-3xl w-full h-48 object-cover petal-shadow mt-6" />
           <img src="/images/products/sunflower-white.jpg" className="rounded-3xl w-full h-48 object-cover petal-shadow" />
           <img src="/images/products/pink-carnation.jpg" className="rounded-3xl w-full h-48 object-cover petal-shadow mt-6" />
