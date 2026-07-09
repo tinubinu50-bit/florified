@@ -15,7 +15,7 @@ export default function About() {
       <section className="relative py-28 px-6 text-center overflow-hidden">
         <div className="absolute inset-0 grid grid-cols-3 opacity-15 pointer-events-none">
           <img src="/images/products/white-lily.jpg" className="w-full h-full object-cover" />
-          <img src="/images/products/pink-mix.jpg" className="w-full h-full object-cover" />
+          <img src="/images/products/pink-mix.png" className="w-full h-full object-cover" />
           <img src="/images/products/burgundy-vase.jpg" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-petal/80 pointer-events-none" />
