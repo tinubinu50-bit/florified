@@ -1,52 +1,62 @@
-import Link from "next/link";
+const WHATSAPP_NUMBER = "971568672524";
 
 export default function CustomOrders() {
+  const message = "Hi Florified! 🌸 I would like to place a *Custom Order*\n\nHere are my details:\n\n🎨 Color palette / theme: \n💐 Flower types I like: \n🎁 Occasion: \n📏 Size preference: \n✨ Any special requests: \n\nLooking forward to hearing from you!";
+  const encoded = encodeURIComponent(message);
+  const waLink = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encoded;
+
   return (
     <div className="flex flex-col">
 
-      {/* Header */}
-      <section className="py-20 px-6 text-center bg-petal">
+      <section className="py-24 px-6 text-center bg-petal">
         <p className="font-script text-mauve text-2xl mb-2">make it yours</p>
         <h1 className="font-display text-4xl md:text-6xl text-plum max-w-2xl mx-auto leading-tight">
           Custom bouquets, <span className="italic text-mauve">your way</span>
         </h1>
+        <p className="font-body text-plum/70 mt-4 max-w-md mx-auto text-sm leading-relaxed">
+          Dream bouquet in mind? Tell us everything and we will bring it to life 🌸
+        </p>
       </section>
 
-      {/* Coming soon / contact CTA */}
-      <section className="py-24 px-6 flex flex-col items-center text-center max-w-2xl mx-auto gap-8">
+      <section className="py-20 px-6 max-w-3xl mx-auto w-full flex flex-col items-center gap-10">
+
         <div className="text-8xl">🎨</div>
-        <h2 className="font-display text-3xl text-plum">
-          Custom order builder coming soon!
-        </h2>
-        <p className="font-body text-plum/70 text-sm leading-relaxed">
-          We're working on a fun drag-and-drop bouquet builder where you can
-          pick your flowers, colors, and wrapping style. Until then, just reach
-          out to us directly  we love bringing your ideas to life!
-        </p>
-        <div className="bg-petal rose-border rounded-3xl p-8 petal-shadow w-full text-left flex flex-col gap-3">
-          <p className="font-display text-lg text-plum">How to place a custom order right now:</p>
+
+        <div className="bg-white rounded-3xl p-8 petal-shadow w-full flex flex-col gap-4" style={{ border: "1.5px solid #E8A0BF" }}>
+          <h2 className="font-display text-2xl text-plum text-center mb-2">How it works</h2>
           {[
-            "1. Visit our Instagram @florified_by_her",
-            "2. Send us a DM with your color palette or inspo pic",
-            "3. Tell us the occasion, size, and any special requests",
-            "4. We'll send you a design preview and confirm details",
-            "5. Sit back while we craft your dream bouquet 🌸",
-          ].map((step) => (
-            <p key={step} className="font-body text-plum/70 text-sm">{step}</p>
-          ))}
+            { step: "1", text: "Click the button below to open WhatsApp" },
+            { step: "2", text: "A pre-filled message with all the details we need will be ready for you" },
+            { step: "3", text: "Fill in your color palette, occasion, size, and any special requests" },
+            { step: "4", text: "Send it and we will reply with a design preview" },
+            { step: "5", text: "Sit back while we craft your dream bouquet 🌸" },
+          ].map(function(item) {
+            return (
+              <div key={item.step} className="flex items-start gap-4">
+                <span className="w-8 h-8 rounded-full bg-mauve text-white font-body font-bold text-sm flex items-center justify-center shrink-0">
+                  {item.step}
+                </span>
+                <p className="font-body text-plum/70 text-sm leading-relaxed pt-1">{item.text}</p>
+              </div>
+            );
+          })}
         </div>
+
         
-          href="https://www.instagram.com/florified_by_her"
+          href={waLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-mauve text-white font-body font-semibold px-8 py-3.5 rounded-full hover:bg-plum transition-colors text-sm shadow-md"
+          className="bg-mauve text-white font-body font-semibold px-10 py-4 rounded-full hover:bg-plum transition-colors text-base shadow-md"
         <a>
-          DM us on Instagram 📸
+          Start My Custom Order on WhatsApp 💬
         </a>
-        <Link href="/products" className="text-mauve font-body text-sm underline underline-offset-4 hover:text-plum transition-colors">
-          Or browse ready-made designs →
-        </Link>
+
+        <p className="font-body text-plum/50 text-xs text-center">
+          You will be redirected to WhatsApp with a pre-filled message. Just fill in your details and hit send!
+        </p>
+
       </section>
+
     </div>
   );
 }

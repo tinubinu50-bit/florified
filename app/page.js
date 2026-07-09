@@ -131,30 +131,26 @@ export default function Home() {
 
       {/* Bento grid showcase */}
       <section className="py-20 px-6 max-w-6xl mx-auto w-full">
-        <p className="font-script text-mauve text-2xl text-center mb-2">a glimpse</p>
-        <h2 className="font-display text-3xl text-plum text-center mb-10">
-          Every bouquet tells a story
-        </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
-          <div className="col-span-2 row-span-2 rounded-3xl overflow-hidden petal-shadow relative group">
-            <img src="/images/products/pink-mix.png" alt="Spring Mix" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            <div className="absolute inset-0 bg-gradient-to-t from-plum/50 to-transparent flex items-end p-5">
-              <p className="font-display text-white text-lg">Spring Mix Signature</p>
-            </div>
-          </div>
-          <div className="rounded-3xl overflow-hidden petal-shadow relative group">
-            <img src="/images/products/sunflower-white.jpg" alt="Sunflower" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="rounded-3xl overflow-hidden petal-shadow relative group">
-            <img src="/images/products/blue-lily.jpg" alt="Blue Lily" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="rounded-3xl overflow-hidden petal-shadow relative group">
-            <img src="/images/products/pink-carnation.jpg" alt="Carnation" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-          <div className="rounded-3xl overflow-hidden petal-shadow relative group">
-            <img src="/images/products/dark-tulip.jpg" alt="Tulip" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-          </div>
-        </div>
+  <Link href="/products" className="col-span-2 row-span-2 rounded-3xl overflow-hidden petal-shadow relative group block">
+    <img src="/images/products/pink-mix.png" alt="Spring Mix" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+    <div className="absolute inset-0 bg-gradient-to-t from-plum/50 to-transparent flex items-end p-5">
+      <p className="font-display text-white text-lg">Spring Mix Signature</p>
+    </div>
+  </Link>
+  <Link href="/products" className="rounded-3xl overflow-hidden petal-shadow relative group block">
+    <img src="/images/products/sunflower-white.jpg" alt="Sunflower" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+  </Link>
+  <Link href="/products" className="rounded-3xl overflow-hidden petal-shadow relative group block">
+    <img src="/images/products/blue-lily.jpg" alt="Blue Lily" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+  </Link>
+  <Link href="/products" className="rounded-3xl overflow-hidden petal-shadow relative group block">
+    <img src="/images/products/pink-carnation.jpg" alt="Carnation" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+  </Link>
+  <Link href="/products" className="rounded-3xl overflow-hidden petal-shadow relative group block">
+    <img src="/images/products/dark-tulip.jpg" alt="Tulip" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+  </Link>
+</div>
       </section>
 
       {/* Scrollable gallery strip */}

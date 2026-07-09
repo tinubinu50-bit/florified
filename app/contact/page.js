@@ -43,7 +43,7 @@ export default function Contact() {
             <p className="font-body text-plum/70 text-sm leading-relaxed">
               Prefer WhatsApp? Send us a message and we will get back to you soon.
             </p>
-            <a href="https://wa.me/971000000000" target="_blank" rel="noopener noreferrer" className="bg-mauve text-white font-body text-xs font-semibold px-5 py-2 rounded-full hover:bg-plum transition-colors">
+            <a href="https://wa.me/971568672524" target="_blank" rel="noopener noreferrer" className="bg-mauve text-white font-body text-xs font-semibold px-5 py-2 rounded-full hover:bg-plum transition-colors">
               Message on WhatsApp
             </a>
           </div>
