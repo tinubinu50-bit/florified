@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Florified — Handcrafted Pipe Cleaner Bouquets",
+  title: "Florified",
   description:
     "Beautiful, long-lasting bouquets handcrafted from colorful pipe cleaners. Made with love, designed to last forever.",
 };
