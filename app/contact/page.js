@@ -1,6 +1,6 @@
 export default function Contact() {
   const faqs = [
-    { q: "How long does an order take?", a: "Most bouquets take 3-5 days to handcraft. For urgent orders, reach out and we will do our best!" },
+    { q: "How long does an order take?", a: "Most bouquets take 4-7 days to handcraft. For urgent orders, reach out and we will do our best!" },
     { q: "Can I request custom colors?", a: "Absolutely! Just tell us your color palette, occasion, and any inspo photos." },
     { q: "Do you deliver?", a: "Yes! We deliver within the UAE. Details and fees are discussed when you place your order." },
     { q: "How long do the bouquets last?", a: "Forever! Pipe cleaner bouquets do not wilt or fade. They will look beautiful for years." },
@@ -11,12 +11,12 @@ export default function Contact() {
     <div className="flex flex-col">
 
       <section className="py-24 px-6 text-center bg-petal">
-        <p className="font-script text-mauve text-2xl mb-2">say hello</p>
+        <p className="font-script text-mauve text-2xl mb-2">Say Hello</p>
         <h1 className="font-display text-4xl md:text-6xl text-plum max-w-2xl mx-auto leading-tight mb-4">
           We love to hear from you
         </h1>
         <p className="font-body text-plum/70 max-w-md mx-auto text-sm leading-relaxed">
-          Slide into our DMs or drop a WhatsApp — we are always happy to chat 🌸
+          Slide into our DMs or drop a WhatsApp we are always happy to chat 🌸
         </p>
       </section>
 
@@ -29,7 +29,7 @@ export default function Contact() {
             <h3 className="font-display text-2xl text-plum">Instagram</h3>
             <p className="font-body text-plum/60 text-sm">@florified_by_her</p>
             <p className="font-body text-plum/70 text-sm leading-relaxed">
-              Follow us for daily bouquet drops and DM us to place an order!
+              Follow us for bouquet drops and DM us to place an order!
             </p>
             <a href="https://www.instagram.com/florified_by_her" target="_blank" rel="noopener noreferrer" className="bg-mauve text-white font-body text-xs font-semibold px-5 py-2 rounded-full hover:bg-plum transition-colors">
               Visit Instagram
@@ -50,7 +50,7 @@ export default function Contact() {
 
         </div>
 
-        <p className="font-script text-mauve text-2xl text-center mb-2">good to know</p>
+        <p className="font-script text-mauve text-2xl text-center mb-2">Good to know</p>
         <h2 className="font-display text-3xl text-plum text-center mb-10">Frequently Asked</h2>
 
         <div className="flex flex-col gap-4">
@@ -67,7 +67,7 @@ export default function Contact() {
       </section>
 
       <section className="py-20 px-6 text-center bg-mauve">
-        <p className="font-script text-white/80 text-2xl mb-2">do not be shy</p>
+        <p className="font-script text-white/80 text-2xl mb-2">Don't be shy</p>
         <h2 className="font-display text-3xl text-white mb-6">
           Every great bouquet starts with a hello 🌸
         </h2>

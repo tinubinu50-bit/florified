@@ -1,9 +1,14 @@
+"use client";
+
 const WHATSAPP_NUMBER = "971568672524";
 
 export default function CustomOrders() {
-  const message = "Hi Florified! 🌸 I would like to place a *Custom Order*\n\nHere are my details:\n\n🎨 Color palette / theme: \n💐 Flower types I like: \n🎁 Occasion: \n📏 Size preference: \n✨ Any special requests: \n\nLooking forward to hearing from you!";
-  const encoded = encodeURIComponent(message);
-  const waLink = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encoded;
+  const message = "Hi Florified!  I would like to place a Custom Order\n\nHere are my details:\n\n Color palette / theme: \n Flower types I like: \n Occasion: \n Size preference: \n Any special requests: \n\nLooking forward to hearing from you!";
+
+  function handleOrder() {
+    const encoded = encodeURIComponent(message);
+    window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encoded, "_blank");
+  }
 
   return (
     <div className="flex flex-col">
@@ -42,14 +47,12 @@ export default function CustomOrders() {
           })}
         </div>
 
-        
-          href={waLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-mauve text-white font-body font-semibold px-10 py-4 rounded-full hover:bg-plum transition-colors text-base shadow-md"
-        <a>
+        <button
+          onClick={handleOrder}
+          className="bg-mauve text-white font-body font-semibold px-10 py-4 rounded-full hover:bg-plum transition-colors text-base shadow-md cursor-pointer"
+        >
           Start My Custom Order on WhatsApp 💬
-        </a>
+        </button>
 
         <p className="font-body text-plum/50 text-xs text-center">
           You will be redirected to WhatsApp with a pre-filled message. Just fill in your details and hit send!

@@ -3,7 +3,7 @@ import Link from "next/link";
 const services = [
   { icon: "💐", title: "Ready-Made Bouquets", desc: "Browse our collection of pre-designed bouquets in a variety of colors and styles. Perfect for gifting or treating yourself." },
   { icon: "🎨", title: "Custom Orders", desc: "Have a specific color palette or theme in mind? We'll craft a bouquet tailored exactly to your vision from scratch." },
-  { icon: "🎁", title: "Gift Packaging", desc: "Every bouquet is wrapped beautifully. Whether it's a birthday, anniversary, or just because — presentation is everything." },
+  { icon: "🎁", title: "Gift Packaging", desc: "Every bouquet is wrapped beautifully. Whether it's a birthday, anniversary, or just because presentation is everything." },
   { icon: "💌", title: "Occasion Specials", desc: "Valentine's Day, graduations, baby showers, weddings — we create themed bouquets for every special occasion." },
 ];
 
@@ -20,7 +20,7 @@ export default function About() {
         </div>
         <div className="absolute inset-0 bg-petal/80 pointer-events-none" />
         <div className="relative z-10">
-          <p className="font-script text-mauve text-2xl mb-2">our story</p>
+          <p className="font-script text-mauve text-2xl mb-2">Our Story</p>
           <h1 className="font-display text-4xl md:text-6xl text-plum max-w-2xl mx-auto leading-tight">
             Born from a love of flowers that{" "}
             <span className="italic text-mauve">never fade</span>
@@ -33,7 +33,7 @@ export default function About() {
         <div className="flex flex-col gap-6">
           <h2 className="font-display text-3xl text-plum">How it all started</h2>
           <p className="font-body text-plum/70 leading-relaxed text-sm">
-            Florified started as a passion project — a simple idea that flowers
+            Florified started as a passion project  a simple idea that flowers
             shouldn't have to die to be beautiful. Using colorful pipe cleaners,
             we began crafting bouquets that hold their shape, color, and charm for years.
           </p>
@@ -61,11 +61,11 @@ export default function About() {
       {/* Values */}
       <section className="bg-petal py-20 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="font-script text-mauve text-2xl mb-2">what drives us</p>
+          <p className="font-script text-mauve text-2xl mb-2">What drives us</p>
           <h2 className="font-display text-3xl text-plum mb-12">Our values</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
-              { icon: "💐", title: "Craftsmanship", desc: "Every flower is shaped by hand. No shortcuts, no machines — just care and creativity." },
+              { icon: "💐", title: "Craftsmanship", desc: "Every flower is shaped by hand. No shortcuts, no machine just care and creativity." },
               { icon: "♻️", title: "Lasting Beauty", desc: "We believe beautiful things should last. Our bouquets are made to be kept, not thrown away." },
               { icon: "🎀", title: "Personal Touch", desc: "Every order is personal. We listen to what you want and make it happen." },
             ].map(({ icon, title, desc }) => (
@@ -81,7 +81,7 @@ export default function About() {
 
       {/* Services */}
       <section className="py-20 px-6 max-w-5xl mx-auto w-full">
-        <p className="font-script text-mauve text-2xl text-center mb-2">what we offer</p>
+        <p className="font-script text-mauve text-2xl text-center mb-2">What We Offer</p>
         <h2 className="font-display text-3xl text-plum text-center mb-12">Our services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map(({ icon, title, desc }) => (
@@ -116,7 +116,7 @@ export default function About() {
 
       {/* CTA */}
       <section className="py-16 px-6 text-center">
-        <p className="font-script text-mauve text-2xl mb-2">love what you see?</p>
+        <p className="font-script text-mauve text-2xl mb-2">Love what you see?</p>
         <h2 className="font-display text-3xl text-plum mb-6">Let's make something beautiful together</h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/products" className="bg-mauve text-white font-body font-semibold px-8 py-3 rounded-full hover:bg-plum transition-colors text-sm shadow-md">

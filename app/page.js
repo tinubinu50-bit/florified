@@ -158,7 +158,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <p className="font-script text-mauve text-2xl mb-1">our work</p>
+              <p className="font-script text-mauve text-2xl mb-1">Our Work</p>
               <h2 className="font-display text-3xl text-plum">Made with pipe cleaners, crafted with love</h2>
             </div>
             <Link

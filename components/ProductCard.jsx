@@ -11,7 +11,7 @@ export default function ProductCard({ product }) {
 
   function handleOrder() {
     const productUrl = "https://florified.vercel.app/products/" + id;
-    const message = "Hi Florified! 🌸 I am interested in ordering the *" + name + "*\n\n" + description + "\n\nPrice: " + price + "\n\n🔗 " + productUrl + "\n\nCould you please share more details?";
+    const message = "Hi Florified!  I am interested in ordering the " + name + "\n\n" + description + "\n\nPrice: " + price + "\n\n🔗 " + productUrl + "\n\nCould you please share more details?";
     const encoded = encodeURIComponent(message);
     window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encoded, "_blank");
   }

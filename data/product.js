@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     name: "Sunshine Sunflower Bouquet",
-    description: "A bold yellow sunflower with white daisies and spiral fern accents, wrapped in crisp white paper with a satin bow. Pure sunshine in your hands.",
+    description: "A bold yellow sunflower with white daisies and spiral fern accents, wrapped in white paper with a satin bow. Pure sunshine in your hands.",
     image: "/images/products/sunflower-white.jpg",
     price: "Starting from AED 85",
     tags: ["Sunflower", "Yellow", "Fresh"],

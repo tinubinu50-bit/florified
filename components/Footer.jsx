@@ -10,13 +10,12 @@ export default function Footer() {
           <span style={{ fontFamily: '"Cormorant Garamond", serif' }} className="text-2xl text-mauve font-bold italic">Florified</span>
           <span className="text-xs text-rose tracking-widest uppercase font-body">by her</span>
           <p className="text-sm text-plum/70 font-body mt-2 leading-relaxed">
-            Handcrafted bouquets made from colorful pipe cleaners — beautiful, lasting, and made with love.
+            Handcrafted bouquets made from colorful pipe cleaners beautiful, lasting, and made with love.
           </p>
         </div>
 
         {/* Quick Links */}
         <div className="flex flex-col gap-2">
-          <h4 className="font-display text-mauve font-semibold mb-1">Quick Links</h4>
           <Link href="/" className="text-sm font-body text-plum/70 hover:text-mauve transition-colors">Home</Link>
           <Link href="/about" className="text-sm font-body text-plum/70 hover:text-mauve transition-colors">About</Link>
           <Link href="/services" className="text-sm font-body text-plum/70 hover:text-mauve transition-colors">Services</Link>
