@@ -38,7 +38,7 @@ export default function Home() {
 
         {/* Background collage - blurred bouquet images */}
         <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 opacity-20 pointer-events-none">
-          <img src="/images/products/pink-mix.jpg" className="w-full h-full object-cover" />
+          <img src="/images/products/pink-mix.png" className="w-full h-full object-cover" />
           <img src="/images/products/sunflower-white.jpg" className="w-full h-full object-cover" />
           <img src="/images/products/blue-lily.jpg" className="w-full h-full object-cover" />
           <img src="/images/products/pink-carnation.jpg" className="w-full h-full object-cover" />
