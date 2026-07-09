@@ -1,15 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const WHATSAPP_NUMBER = "971568672524";
 
 export default function ProductCard({ product }) {
-  const { name, description, image, tags, price } = product;
+  const { id, name, description, image, tags, price } = product;
   const [overlayVisible, setOverlayVisible] = useState(false);
 
   function handleOrder() {
-    const message = "Hi Florified! 🌸 I am interested in ordering the *" + name + "*\n\n" + description + "\n\nPrice: " + price + "\n\nCould you please share more details?";
+    const productUrl = "https://florified.vercel.app/products/" + id;
+    const message = "Hi Florified! 🌸 I am interested in ordering the *" + name + "*\n\n" + description + "\n\nPrice: " + price + "\n\n🔗 " + productUrl + "\n\nCould you please share more details?";
     const encoded = encodeURIComponent(message);
     window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encoded, "_blank");
   }
@@ -30,13 +32,20 @@ export default function ProductCard({ product }) {
           <span className="text-7xl">🌸</span>
         )}
 
-        <div className={"absolute inset-0 bg-mauve/80 flex items-center justify-center transition-opacity duration-300 " + (overlayVisible ? "opacity-100" : "opacity-0 group-hover:opacity-100")}>
+        <div className={"absolute inset-0 bg-mauve/80 flex flex-col items-center justify-center gap-3 transition-opacity duration-300 " + (overlayVisible ? "opacity-100" : "opacity-0 group-hover:opacity-100")}>
           <button
             onClick={function(e) { e.stopPropagation(); handleOrder(); }}
-            className="bg-white text-mauve font-body font-semibold text-sm px-7 py-3 rounded-full hover:bg-petal transition-colors duration-200 shadow-lg cursor-pointer"
+            className="bg-white text-mauve font-body font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-petal transition-colors duration-200 shadow-lg cursor-pointer"
           >
             Order on WhatsApp 💬
           </button>
+          <Link
+            href={"/products/" + id}
+            onClick={function(e) { e.stopPropagation(); }}
+            className="bg-white/20 text-white font-body text-xs px-6 py-2 rounded-full hover:bg-white/30 transition-colors border border-white/40"
+          >
+            View Details →
+          </Link>
         </div>
       </div>
 
@@ -59,3 +68,4 @@ export default function ProductCard({ product }) {
     </div>
   );
 }
+
